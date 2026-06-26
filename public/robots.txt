@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drinkyard2.netlify.app/sitemap.xml

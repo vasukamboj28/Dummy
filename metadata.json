@@ -1,0 +1,6 @@
+{
+  "name": "DrinkYard",
+  "description": "Premium beverage lounge serving handcrafted coffees, refreshing mojitos, creamy milkshakes, and healthy smoothies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

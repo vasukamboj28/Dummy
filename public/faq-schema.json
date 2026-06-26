@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What beverages does DrinkYard serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Coffee, mojitos, milkshakes and smoothies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer fresh ingredients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, handcrafted beverages use fresh ingredients."
+      }
+    }
+  ]
+}
