@@ -12,10 +12,8 @@ export default function SEO({
   canonical,
 }: SEOProps) {
   useEffect(() => {
-    // Set page title
     document.title = title;
 
-    // Function to create/update meta tags
     const setMeta = (
       attr: "name" | "property",
       key: string,
@@ -36,6 +34,7 @@ export default function SEO({
 
     // Basic SEO
     setMeta("name", "description", description);
+    setMeta("name", "robots", "index, follow");
 
     // Open Graph
     setMeta("property", "og:title", title);
@@ -45,23 +44,22 @@ export default function SEO({
     setMeta(
       "property",
       "og:image",
-      "https://drinkyard2.netlify.app/og-image.svg"
+      "https://dummy-blond-alpha.vercel.app/og-image.png"
     );
+    setMeta("property", "og:image:width", "1200");
+    setMeta("property", "og:image:height", "630");
 
-    // Twitter Card
+    // Twitter
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", title);
     setMeta("name", "twitter:description", description);
     setMeta(
       "name",
       "twitter:image",
-      "https://drinkyard2.netlify.app/og-image.svg"
+      "https://dummy-blond-alpha.vercel.app/og-image.png"
     );
 
-    // Robots Meta
-    setMeta("name", "robots", "index, follow");
-
-    // Canonical Tag
+    // Canonical
     let canonicalTag = document.querySelector(
       'link[rel="canonical"]'
     ) as HTMLLinkElement | null;
